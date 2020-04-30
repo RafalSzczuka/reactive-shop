@@ -79,10 +79,14 @@ export const Numbers = styled.div`
 export const Product = styled.div`
   flex-basis: 30%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export const Button = styled.button`

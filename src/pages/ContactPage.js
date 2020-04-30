@@ -14,7 +14,7 @@ class ContactPage extends Component {
         variants={pageVariants}
         transition={pageTransition}
       >
-        <h3 className="header-small">contact with us</h3>
+        <h2 className="header-big">contact with us</h2>
         <form></form>
       </motion.div>
     );

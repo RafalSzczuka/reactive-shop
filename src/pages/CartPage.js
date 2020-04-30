@@ -30,6 +30,7 @@ const CartPage = ({ basketProps, clearBasket }) => {
         name={product.name}
         amount={product.amount}
         numbers={product.numbers}
+        id={product.id}
       />
     );
   });

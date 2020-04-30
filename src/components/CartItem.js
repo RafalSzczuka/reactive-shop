@@ -3,6 +3,7 @@ import { ItemWrapper, Product, Numbers, Button } from "../styles/CartItem.js";
 import { connect } from "react-redux";
 import { productQuantity, clearProduct } from "../actions/productQuantity";
 import { Tooltip } from "../styles/Tooltip";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
@@ -14,15 +15,18 @@ const CartItem = ({
   numbers,
   productQuantity,
   clearProduct,
+  id,
 }) => {
   let cost = (numbers * amount).toFixed(2);
   return (
     <ItemWrapper>
       <Product>
-        <div className="item_img">
-          <img src={image} alt={name} />
-        </div>
-        <h3>{name}</h3>
+        <Link to={`/product/${id}`}>
+          <div className="item_img">
+            <img src={image} alt={name} />
+          </div>
+          <h3>{name}</h3>
+        </Link>
       </Product>
       <Numbers>
         <span className="amount">{amount}$</span>

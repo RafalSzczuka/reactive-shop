@@ -1,6 +1,16 @@
 .AboutPage {
-  p {
+  .about {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    line-height: 1.9;
+    text-align: justify;
+
+    .top {
+      display: flex;
+      align-items: center;
+
+      p {
+        padding-right: 40px;
+      }
+    }
   }
 }
