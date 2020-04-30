@@ -1,7 +1,9 @@
 import React from "react";
 import ProductDetails from "../components/ProductDetails";
 import { Container } from "../styles/OrderPage";
-import AbsoluteWrapper from "../components/AbsoluteWrapper";
+
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../components/pageTransition";
 
 import ItemsService from "../services/ItemsService";
 
@@ -10,7 +12,13 @@ const ProductPage = ({ match }) => {
   const { name, amount, category, image, weight, dimensions } = product[0];
 
   return (
-    <AbsoluteWrapper>
+    <motion.div
+      initial="out"
+      exit="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <Container>
         <ProductDetails
           name={name}
@@ -21,7 +29,7 @@ const ProductPage = ({ match }) => {
           dimensions={dimensions}
         />
       </Container>
-    </AbsoluteWrapper>
+    </motion.div>
   );
 };
 

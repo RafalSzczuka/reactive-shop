@@ -1,8 +1,8 @@
 import React from "react";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
-
-import AbsoluteWrapper from "../components/AbsoluteWrapper";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../components/pageTransition";
 
 import { connect } from "react-redux";
 import { Cart, CartHeader, CartFooter, OrderButton } from "../styles/CartPage";
@@ -72,9 +72,15 @@ const CartPage = ({ basketProps, clearBasket }) => {
   };
 
   return (
-    <AbsoluteWrapper>
+    <motion.div
+      initial="out"
+      exit="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       {total > 0 ? <CartFilled /> : <CartEmpty />}
-    </AbsoluteWrapper>
+    </motion.div>
   );
 };
 

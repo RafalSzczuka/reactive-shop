@@ -3,7 +3,9 @@ import "../styles/CatalogPage.scss";
 import ItemsServie from "../services/ItemsService";
 import Product from "../components/Product";
 import Filter from "../components/Filter";
-import AbsoluteWrapper from "../components/AbsoluteWrapper";
+
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../components/pageTransition";
 
 const products = ItemsServie.getProducts();
 
@@ -64,26 +66,31 @@ class CatalogPage extends Component {
 
   render() {
     return (
-      <AbsoluteWrapper>
-        <div className="container">
-          <h2 className="header-big">Catalog</h2>
+      <motion.div
+        className="container"
+        initial="out"
+        exit="out"
+        animate="in"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        <h2 className="header-big">Catalog</h2>
 
-          <div className="Catalog">
-            <div className="column-left">
-              <Filter
-                change={this.handleChange}
-                click={this.handleClear}
-                value={this.state.search}
-                radio={this.handleRadioChange}
-                radioVal={this.state.manufacture}
-              />
-            </div>
-            <div className="column-right">
-              <div className="products">{this.filteredList()}</div>
-            </div>
+        <div className="Catalog">
+          <div className="column-left">
+            <Filter
+              change={this.handleChange}
+              click={this.handleClear}
+              value={this.state.search}
+              radio={this.handleRadioChange}
+              radioVal={this.state.manufacture}
+            />
+          </div>
+          <div className="column-right">
+            <div className="products">{this.filteredList()}</div>
           </div>
         </div>
-      </AbsoluteWrapper>
+      </motion.div>
     );
   }
 }

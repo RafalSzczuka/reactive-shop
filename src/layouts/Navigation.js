@@ -9,7 +9,6 @@ const menuItems = [
   { name: "Catalog", path: "/catalog" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
-  { name: "Admin panel", path: "/admin" },
 ];
 
 const Navigation = (props) => {
@@ -23,7 +22,7 @@ const Navigation = (props) => {
 
   return (
     <div className="Navigation">
-      <div className="container">
+      <div className="nav_items">
         <ul>{menu}</ul>
         <div className="cart_btn">
           <Link to="/cart">{`Cart (${props.basketProps.basketNumbers})`}</Link>

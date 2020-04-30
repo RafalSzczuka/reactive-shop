@@ -6,7 +6,7 @@ import store from "../store";
 
 import Navigation from "./Navigation";
 import Page from "./Page";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 import "../styles/App.scss";
 
@@ -16,9 +16,9 @@ class App extends Component {
       <HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
           <div className="App">
-            <nav>{<Navigation />}</nav>
-            <main>{<Page />}</main>
-            {/* <footer>{<Footer />}</footer> */}
+            <Navigation />
+            <Page />
+            <Footer />
           </div>
         </Provider>
       </HashRouter>
