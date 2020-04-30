@@ -2,7 +2,9 @@ import React from "react";
 import ItemsService from "../services/ItemsService";
 import Product from "../components/Product";
 import styled from "styled-components";
-import AbsoluteWrapper from "../components/AbsoluteWrapper";
+
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../components/pageTransition";
 
 const desktops = ItemsService.getFeatured("desktop");
 const tablets = ItemsService.getFeatured("tablet");
@@ -43,18 +45,23 @@ const featuredTablets = tablets.map((product) => (
 
 const HomePage = () => {
   return (
-    <AbsoluteWrapper>
-      <div className="container">
-        <h1 className="header-big">
-          Welcome to our <TextInt>(reactive)</TextInt> store
-          <TextInt> ...with redux state management</TextInt>
-        </h1>
-        <Featured>Desktops</Featured>
-        <Products>{featuredDesktops}</Products>
-        <Featured>Tablets</Featured>
-        <Products>{featuredTablets}</Products>
-      </div>
-    </AbsoluteWrapper>
+    <motion.div
+      className="container"
+      initial="out"
+      exit="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <h1 className="header-big">
+        Welcome to our <TextInt>(reactive)</TextInt> store
+        <TextInt> ...with redux state management</TextInt>
+      </h1>
+      <Featured>Desktops</Featured>
+      <Products>{featuredDesktops}</Products>
+      <Featured>Tablets</Featured>
+      <Products>{featuredTablets}</Products>
+    </motion.div>
   );
 };
 
