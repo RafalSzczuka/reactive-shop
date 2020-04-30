@@ -1,0 +1,70 @@
+.ContactPage.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.4);
+  max-width: 800px;
+}
+
+h2.header-big {
+  text-align: center;
+}
+
+.form_container {
+  max-width: 650px;
+  padding: 50px 0 100px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  input {
+    font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    background-color: #eee;
+    width: calc(100% - 70px);
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    padding: 0 35px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 170px;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 35px;
+  font-size: 1.5rem;
+  resize: vertical;
+  background-color: #eee;
+}
+
+.send_btn {
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  width: 170px;
+  padding: 15px 0;
+  border: none;
+  background-color: #827ffe;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.5s;
+
+  &:hover {
+    width: 190px;
+    background-color: #4542cc;
+  }
+}
