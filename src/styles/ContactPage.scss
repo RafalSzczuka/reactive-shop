@@ -18,7 +18,9 @@ h2.header-big {
 .input {
   width: 100%;
   margin-bottom: 20px;
+  position: relative;
   input {
+    position: relative;
     font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
     background-color: #eee;
@@ -66,5 +68,55 @@ textarea {
   &:hover {
     width: 190px;
     background-color: #4542cc;
+  }
+}
+
+.alert-validate {
+  &:hover {
+    &::after {
+      background-color: red;
+    }
+  }
+  &::after {
+    content: "!";
+
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+
+    font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(221, 0, 0);
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    transition: 0.3s;
+    z-index: 100;
+  }
+
+  &::before {
+    content: attr(validator-message);
+    position: absolute;
+    max-width: 70%;
+    min-width: 70px;
+    z-index: 50;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 6px 35px 6px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: red;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    font-weight: bold;
   }
 }

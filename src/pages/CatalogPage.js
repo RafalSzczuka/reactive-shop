@@ -5,7 +5,7 @@ import Product from "../components/Product";
 import Filter from "../components/Filter";
 
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition } from "../components/pageTransition";
+import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 const products = ItemsServie.getProducts();
 

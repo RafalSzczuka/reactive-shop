@@ -4,7 +4,7 @@ import Product from "../components/Product";
 import styled from "styled-components";
 
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition } from "../components/pageTransition";
+import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 const desktops = ItemsService.getFeatured("desktop");
 const tablets = ItemsService.getFeatured("tablet");

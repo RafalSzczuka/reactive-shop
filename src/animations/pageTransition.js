@@ -4,5 +4,7 @@ export const pageVariants = {
 };
 
 export const pageTransition = {
-  transition: "linear",
+  type: "tween",
+  ease: "easeInOut",
+  duration: 0.4,
 };

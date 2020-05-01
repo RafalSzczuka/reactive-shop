@@ -3,7 +3,7 @@ import "../styles/AboutPage.scss";
 import logo from "../images/Online-Shopping-icon-512px.png";
 
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition } from "../components/pageTransition";
+import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 const AboutPage = () => {
   return (

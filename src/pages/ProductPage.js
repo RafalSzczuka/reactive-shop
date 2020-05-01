@@ -3,7 +3,7 @@ import ProductDetails from "../components/ProductDetails";
 import { Container } from "../styles/OrderPage";
 
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition } from "../components/pageTransition";
+import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 import ItemsService from "../services/ItemsService";
 

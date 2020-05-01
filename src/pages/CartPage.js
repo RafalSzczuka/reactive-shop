@@ -2,7 +2,7 @@ import React from "react";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition } from "../components/pageTransition";
+import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 import { connect } from "react-redux";
 import { Cart, CartHeader, CartFooter, OrderButton } from "../styles/CartPage";
