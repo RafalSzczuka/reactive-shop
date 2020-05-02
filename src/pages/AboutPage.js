@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/AboutPage.scss";
 import logo from "../images/Online-Shopping-icon-512px.png";
 
@@ -6,6 +6,10 @@ import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../animations/pageTransition";
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <motion.div
       className="AboutPage container"

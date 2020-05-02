@@ -50,8 +50,36 @@
   margin: 15px auto;
   background-color: rgb(81, 156, 218);
   color: white;
-  transition: 0.3s;
+  transition-duration: 0.3s;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+
+  &::after {
+    content: "";
+    background: rgb(81, 156, 218);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -70px !important;
+    box-shadow: 0 0 5px 5px rgba(146, 217, 251, 0.85);
+    opacity: 0;
+    transition: all 0.6s;
+  }
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  &:active {
+    transform: translateY(5px);
+  }
 }
 
 .product button:hover {

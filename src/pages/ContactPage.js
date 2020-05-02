@@ -9,6 +9,7 @@ class ContactPage extends Component {
     email: "",
     phone: "",
     message: "",
+    verified: false,
 
     errors: {
       username: false,
@@ -50,7 +51,7 @@ class ContactPage extends Component {
     ) {
       email = true;
     }
-    if (this.state.phone.length > 0 && this.state.phone.length === 9) {
+    if (this.state.phone.match(/^\d{9}$/)) {
       phone = true;
     }
     if (this.state.message.length > 0) {
@@ -58,6 +59,12 @@ class ContactPage extends Component {
     }
     if (username && email && phone && message) {
       correct = true;
+      this.setState({
+        verified: true,
+      });
+      setTimeout(() => {
+        this.setState({ verified: false });
+      }, 4500);
     }
     return {
       username,
@@ -98,6 +105,10 @@ class ContactPage extends Component {
       });
     }
   };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
     const {
@@ -180,7 +191,12 @@ class ContactPage extends Component {
                 ></textarea>
               </label>
             </div>
-            <button className="send_btn">Send</button>
+            <button className="send_btn">
+              {this.state.verified ? "Message send" : "Send"}
+            </button>
+            {this.state.verified ? (
+              <h3>Thank you for your message. We will reply soon!</h3>
+            ) : null}
           </form>
         </div>
       </motion.div>

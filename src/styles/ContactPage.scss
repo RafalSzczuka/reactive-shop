@@ -3,6 +3,12 @@
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.4);
   max-width: 800px;
+
+  h3 {
+    text-align: center;
+    font-weight: normal;
+    color: gray;
+  }
 }
 
 h2.header-big {
@@ -35,6 +41,7 @@ h2.header-big {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 textarea {
@@ -56,7 +63,7 @@ textarea {
   width: 170px;
   padding: 15px 0;
   border: none;
-  background-color: #827ffe;
+  background-color: #519cda;
   border-radius: 50px;
   cursor: pointer;
   color: white;
@@ -67,7 +74,7 @@ textarea {
 
   &:hover {
     width: 190px;
-    background-color: #4542cc;
+    background-color: #0363b2;
   }
 }
 

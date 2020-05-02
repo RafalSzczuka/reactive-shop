@@ -35,6 +35,36 @@ export const DetailsWidget = styled.div`
 
   .add_to_cart {
     margin-top: 20px;
+    button {
+      background-color: rgb(81, 156, 218);
+
+      &::after {
+        content: "";
+        background: rgb(81, 156, 218);
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -100px !important;
+        box-shadow: 0 0 5px 5px rgba(146, 217, 251, 0.85);
+        opacity: 0;
+        transition: all 0.8s;
+      }
+      &:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s;
+      }
+      &:active {
+        transform: translateY(5px);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+      }
+    }
+
     span {
       font-size: 1.7rem;
       color: #00a1b4;
@@ -74,18 +104,23 @@ export const DetailsWidget = styled.div`
   }
 
   button {
+    position: relative;
+
+    padding: 10px 20px;
+    border: none;
     border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.2);
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 1.2rem;
     color: white;
-    transition: 0.3s;
+
+    font-size: 1.2rem;
     font-family: "Catamaran", sans-serif;
     font-weight: bold;
-    background-color: rgb(81, 156, 218);
-    border: none;
+    text-align: center;
+
     cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    outline: none;
 
     &:hover {
       background-color: rgb(24, 129, 216);

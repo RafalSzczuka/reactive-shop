@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ItemsService from "../services/ItemsService";
 import Product from "../components/Product";
 import styled from "styled-components";
@@ -44,6 +44,10 @@ const featuredTablets = tablets.map((product) => (
 ));
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <motion.div
       className="container"

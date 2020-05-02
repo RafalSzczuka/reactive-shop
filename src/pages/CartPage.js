@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -13,6 +13,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const CartPage = ({ basketProps, clearBasket }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   let productsInCart = [];
   const total = basketProps.cartCost.toFixed(2);
 
