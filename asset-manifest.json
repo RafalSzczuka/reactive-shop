@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactive-shop/static/css/main.a38fe1c1.chunk.css",
+    "main.css": "/reactive-shop/static/css/main.420d437a.chunk.css",
     "main.js": "/reactive-shop/static/js/main.2c80fd45.chunk.js",
     "main.js.map": "/reactive-shop/static/js/main.2c80fd45.chunk.js.map",
     "runtime-main.js": "/reactive-shop/static/js/runtime-main.9f62fa0e.js",
@@ -8,16 +8,16 @@
     "static/js/2.2935d8e6.chunk.js": "/reactive-shop/static/js/2.2935d8e6.chunk.js",
     "static/js/2.2935d8e6.chunk.js.map": "/reactive-shop/static/js/2.2935d8e6.chunk.js.map",
     "index.html": "/reactive-shop/index.html",
-    "precache-manifest.946191ac524aa8d43c5a834901fd01da.js": "/reactive-shop/precache-manifest.946191ac524aa8d43c5a834901fd01da.js",
+    "precache-manifest.df00cf82e8b41541aeeee152ae646595.js": "/reactive-shop/precache-manifest.df00cf82e8b41541aeeee152ae646595.js",
     "service-worker.js": "/reactive-shop/service-worker.js",
-    "static/css/main.a38fe1c1.chunk.css.map": "/reactive-shop/static/css/main.a38fe1c1.chunk.css.map",
+    "static/css/main.420d437a.chunk.css.map": "/reactive-shop/static/css/main.420d437a.chunk.css.map",
     "static/js/2.2935d8e6.chunk.js.LICENSE.txt": "/reactive-shop/static/js/2.2935d8e6.chunk.js.LICENSE.txt",
     "static/media/Online-Shopping-icon-512px.png": "/reactive-shop/static/media/Online-Shopping-icon-512px.06767620.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9f62fa0e.js",
     "static/js/2.2935d8e6.chunk.js",
-    "static/css/main.a38fe1c1.chunk.css",
+    "static/css/main.420d437a.chunk.css",
     "static/js/main.2c80fd45.chunk.js"
   ]
 }
