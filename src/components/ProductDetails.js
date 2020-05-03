@@ -13,7 +13,7 @@ const ProductDetails = ({
   dimensions,
 }) => {
   return (
-    <DetailsWidget>
+    <DetailsWidget className="container">
       <Header>{name}</Header>
       <h3 className="category">{category}</h3>
       <div className="wrapper">
@@ -42,7 +42,7 @@ const ProductDetails = ({
               </li>
               <li>
                 Dimensions:
-                <ul>
+                <ul className="dimensions">
                   <li>
                     Height: <span>{dimensions.Height}</span>
                   </li>

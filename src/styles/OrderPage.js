@@ -7,6 +7,11 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 50px auto;
   width: 70%;
+
+  @media (max-width: 360px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 export const Header = styled.h2`

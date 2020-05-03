@@ -6,9 +6,9 @@ export const Cart = styled.div`
   margin: 50px auto;
   width: 70%;
 
-  @media (max-width: 360px) {
+  /* @media (max-width: 360px) {
     width: 95%;
-  }
+  } */
 `;
 
 export const CartHeader = styled.div`

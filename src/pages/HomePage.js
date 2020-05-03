@@ -12,16 +12,28 @@ const tablets = ItemsService.getFeatured("tablet");
 const Products = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 360px) {
+    flex-wrap: wrap;
+  }
 `;
 const Featured = styled.h2`
   text-align: center;
   font-size: 2rem;
+
+  @media (max-width: 360px) {
+    font-size: 1.7rem;
+  }
 `;
 
 const TextInt = styled.span`
   font-size: 2rem;
   color: gray;
   font-style: italic;
+
+  @media (max-width: 360px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const featuredDesktops = desktops.map((product) => (

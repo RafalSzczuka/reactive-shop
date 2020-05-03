@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   margin: 0 auto;
   background-color: #eee;
@@ -27,4 +28,34 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 360px) {
+  .App {
+    text-align: center;
+  }
+  .container {
+    max-width: 340px;
+  }
+  .header-big {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+  .header-small {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+  .product {
+    flex: 1 1 40%;
+    cursor: none;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+    p.price {
+      font-size: 20px;
+    }
+  }
 }

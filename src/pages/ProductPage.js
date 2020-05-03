@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import ProductDetails from "../components/ProductDetails";
-import { Container } from "../styles/OrderPage";
 
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../animations/pageTransition";
@@ -23,16 +22,14 @@ const ProductPage = ({ match }) => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Container>
-        <ProductDetails
-          name={name}
-          amount={amount}
-          category={category}
-          image={image}
-          weight={weight}
-          dimensions={dimensions}
-        />
-      </Container>
+      <ProductDetails
+        name={name}
+        amount={amount}
+        category={category}
+        image={image}
+        weight={weight}
+        dimensions={dimensions}
+      />
     </motion.div>
   );
 };

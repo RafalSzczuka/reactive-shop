@@ -11,6 +11,7 @@ export const DetailsWidget = styled.div`
   background: white;
   border-radius: 10px;
   padding: 20px;
+  margin-top: 74px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.4);
 
   .column_left {
@@ -127,6 +128,53 @@ export const DetailsWidget = styled.div`
       box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.6);
     }
   }
+
+  @media (max-width: 360px) {
+    width: 340px;
+    padding: 20px 0;
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        padding: 0px 25px;
+      }
+
+      .img_container {
+        min-width: 340px;
+        width: 340px;
+        position: static;
+      }
+
+      img {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+      }
+    }
+
+    .column_left {
+      margin: 0;
+      width: 100%;
+    }
+
+    .column_right {
+      margin: 0;
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+
+        .catalog {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
 `;
 
 export const Technical = styled.div`
@@ -145,6 +193,29 @@ export const Technical = styled.div`
 
     span {
       font-weight: bold;
+    }
+  }
+
+  @media (max-width: 360px) {
+    ul {
+      list-style: disc;
+      padding-left: 25%;
+    }
+
+    ul li {
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      max-width: 150px;
+
+      .dimensions {
+        li {
+          width: 125px;
+        }
+      }
+
+      span {
+        font-weight: bold;
+      }
     }
   }
 `;
