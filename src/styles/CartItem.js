@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ItemWrapper = styled.div`
-  height: 150px;
+  height: 10%;
   margin: 10px 0;
   position: relative;
   background-color: white;
@@ -53,6 +53,19 @@ export const ItemWrapper = styled.div`
       color: red;
     }
   }
+  @media (max-width: 450px) {
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    .item_img {
+      height: 50px;
+    }
+
+    .trash {
+      right: 105px;
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Numbers = styled.div`
@@ -63,7 +76,7 @@ export const Numbers = styled.div`
   text-align: center;
 
   span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .total {
@@ -73,6 +86,15 @@ export const Numbers = styled.div`
   .operators {
     position: relative;
     min-width: 60px;
+  }
+
+  @media (max-width: 450px) {
+    span {
+      font-size: 0.9rem;
+    }
+    .operators {
+      min-width: 50px;
+    }
   }
 `;
 
@@ -86,6 +108,13 @@ export const Product = styled.div`
     text-align: center;
     text-decoration: none;
     color: black;
+  }
+
+  @media (max-width: 450px) {
+    a {
+      flex-direction: column;
+      font-size: 0.6rem;
+    }
   }
 `;
 
@@ -101,6 +130,13 @@ export const Button = styled.button`
   transition: 0.2s;
   cursor: pointer;
   outline: none;
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   &.btn_decrease {
     position: absolute;
@@ -118,5 +154,18 @@ export const Button = styled.button`
   }
   &:hover {
     box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8);
+  }
+
+  @media (max-width: 450px) {
+    width: 15px;
+    height: 15px;
+    font-size: 0.9rem;
+
+    &.btn_decrease {
+      left: -0.5%;
+    }
+    &.btn_increase {
+      right: -0.5%;
+    }
   }
 `;

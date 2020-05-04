@@ -6,6 +6,28 @@
   border-radius: 10px;
   margin-right: 10px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.4);
+  transition: 0.6s;
+
+  span.arrow {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(0deg);
+
+    height: 28px;
+    width: 28px;
+    font-size: 2rem;
+    color: #2196f3;
+    transition: 0.6s;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 
   h3 {
     font-size: 2rem;
@@ -14,6 +36,7 @@
     margin: 15px auto;
   }
   h4 {
+    position: relative;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
@@ -46,5 +69,41 @@
     border-radius: 10px;
     border: 1px solid gray;
     outline: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .Filter {
+    margin-right: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 190px;
+
+    &.opened {
+      height: 530px;
+    }
+
+    span.arrow {
+      display: block;
+
+      &.active {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 5px auto;
+    }
+    h4 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      margin-left: 5px;
+      text-align: left;
+    }
+
+    .clear {
+      top: -5px;
+    }
   }
 }

@@ -13,7 +13,7 @@ const Products = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     flex-wrap: wrap;
   }
 `;
@@ -21,7 +21,7 @@ const Featured = styled.h2`
   text-align: center;
   font-size: 2rem;
 
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     font-size: 1.7rem;
   }
 `;
@@ -31,7 +31,7 @@ const TextInt = styled.span`
   color: gray;
   font-style: italic;
 
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     font-size: 1.3rem;
   }
 `;

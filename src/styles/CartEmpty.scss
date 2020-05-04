@@ -11,3 +11,14 @@
     transform: translateX(-2%);
   }
 }
+
+@media (max-width: 450px) {
+  .empty_cart_container {
+    h3 {
+      font-size: 2rem;
+    }
+    .cart_icon {
+      font-size: 200px;
+    }
+  }
+}

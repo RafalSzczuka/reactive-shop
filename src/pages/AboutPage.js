@@ -19,8 +19,8 @@ const AboutPage = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <h2 className="header-big">About</h2>
       <section className="about">
+        <h2 className="header-big">About</h2>
         <div className="top">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum illo

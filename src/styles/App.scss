@@ -30,13 +30,18 @@
   margin: 0 auto;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .App {
     text-align: center;
   }
   .container {
-    max-width: 340px;
+    max-width: 95%;
   }
+
+  .main_container {
+    margin-top: 58px;
+  }
+
   .header-big {
     font-size: 2rem;
     text-transform: uppercase;

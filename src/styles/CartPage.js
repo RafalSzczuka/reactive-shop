@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Cart = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 0 auto;
   width: 70%;
 
-  /* @media (max-width: 360px) {
+  @media (max-width: 450px) {
     width: 95%;
-  } */
+  }
 `;
 
 export const CartHeader = styled.div`
@@ -25,6 +25,11 @@ export const CartHeader = styled.div`
   }
   .cart_header_product {
     width: 30%;
+  }
+  @media (max-width: 450px) {
+    h4 {
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -70,6 +75,16 @@ export const CartFooter = styled.div`
       }
     }
   }
+  @media (max-width: 450px) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    margin-left: 0;
+
+    .clear_cart {
+      right: -23%;
+    }
+  }
 `;
 
 export const OrderButton = styled.button`
@@ -96,5 +111,14 @@ export const OrderButton = styled.button`
   &:hover {
     background-color: #17b217;
     box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.9);
+  }
+
+  @media (max-width: 450px) {
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60%;
+    margin-left: 0;
+    height: 3rem;
   }
 `;

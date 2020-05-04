@@ -30,6 +30,9 @@ class Navigation extends Component {
   };
 
   render() {
+    const { burgerActivated } = this.state;
+    const { basketNumbers } = this.props.basketProps;
+
     const menu = menuItems.map((item) => (
       <li key={item.name} className={item.class}>
         <NavLink
@@ -42,23 +45,17 @@ class Navigation extends Component {
       </li>
     ));
     return (
-      <div
-        className={
-          this.state.burgerActivated ? "Navigation active" : "Navigation"
-        }
-      >
+      <div className={burgerActivated ? "Navigation active" : "Navigation"}>
         <div className="nav_items">
           <ul>{menu}</ul>
           <Link to="/cart" className="cart_btn" onClick={this.handleBurger}>
             <span className="ico">
               <FontAwesomeIcon icon={faShoppingCart} />
             </span>
-            {`Cart (${this.props.basketProps.basketNumbers})`}
+            {`Cart (${basketNumbers})`}
           </Link>
-          <div
-            className={this.state.burgerActivated ? "burger active" : "burger"}
-          >
-            {this.state.burgerActivated ? (
+          <div className={burgerActivated ? "burger active" : "burger"}>
+            {burgerActivated ? (
               <FontAwesomeIcon icon={faTimes} onClick={this.handleBurger} />
             ) : (
               <FontAwesomeIcon icon={faBars} onClick={this.handleBurger} />

@@ -35,14 +35,14 @@ const CartItem = ({
             className="btn_decrease"
             onClick={() => productQuantity("decrease", name)}
           >
-            -
+            <span>-</span>
           </Button>
           <span className="quantity">{numbers}</span>
           <Button
             className="btn_increase"
             onClick={() => productQuantity("increase", name)}
           >
-            +
+            <span>+</span>
           </Button>
         </div>
         <span className="total">{cost}$</span>

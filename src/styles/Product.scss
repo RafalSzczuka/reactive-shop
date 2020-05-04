@@ -6,7 +6,7 @@
   flex: 1 0 23%;
   border-radius: 10px;
   overflow: hidden;
-  max-width: 260px;
+  max-width: 207px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.4);
   transition: 0.4s;
   cursor: pointer;
@@ -37,7 +37,7 @@
 }
 
 .product h3 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 5px auto;
 }
 
@@ -84,4 +84,10 @@
 
 .product button:hover {
   background-color: rgb(24, 129, 216);
+}
+
+@media (max-width: 450px) {
+  .product {
+    max-width: 100%;
+  }
 }

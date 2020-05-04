@@ -42,6 +42,7 @@ const CartPage = ({ basketProps, clearBasket }) => {
   const CartFilled = () => {
     return (
       <Cart className="container">
+        <h2 className="header-big">Cart</h2>
         <CartHeader>
           <h4 className="cart_header_product">Product</h4>
           <h4 className="cart_header_price">Price</h4>

@@ -88,4 +88,10 @@ export const Loader = styled.div`
         0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
     }
   }
+
+  @media (max-width: 450px) {
+    font-size: 25px;
+    margin: 70px auto;
+    margin-bottom: 110px;
+  }
 `;

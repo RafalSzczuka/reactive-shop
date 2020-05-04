@@ -20,3 +20,17 @@
     margin: 10px auto;
   }
 }
+
+@media (max-width: 450px) {
+  .Catalog {
+    flex-direction: column;
+
+    .column-left {
+      width: 100%;
+    }
+
+    .column-right {
+      width: 100%;
+    }
+  }
+}

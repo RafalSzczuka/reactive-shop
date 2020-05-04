@@ -129,9 +129,10 @@ export const DetailsWidget = styled.div`
     }
   }
 
-  @media (max-width: 360px) {
-    width: 340px;
+  @media (max-width: 450px) {
+    width: 95%;
     padding: 20px 0;
+    margin-top: 35px;
 
     .wrapper {
       flex-direction: column;
@@ -142,8 +143,7 @@ export const DetailsWidget = styled.div`
       }
 
       .img_container {
-        min-width: 340px;
-        width: 340px;
+        width: 95%;
         position: static;
       }
 
@@ -196,7 +196,7 @@ export const Technical = styled.div`
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 450px) {
     ul {
       list-style: disc;
       padding-left: 25%;
