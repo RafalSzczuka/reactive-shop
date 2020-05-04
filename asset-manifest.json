@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/reactive-shop/static/css/main.3aed5eea.chunk.css",
-    "main.js": "/reactive-shop/static/js/main.b689ddb6.chunk.js",
-    "main.js.map": "/reactive-shop/static/js/main.b689ddb6.chunk.js.map",
+    "main.css": "/reactive-shop/static/css/main.79b377fb.chunk.css",
+    "main.js": "/reactive-shop/static/js/main.f94b34ad.chunk.js",
+    "main.js.map": "/reactive-shop/static/js/main.f94b34ad.chunk.js.map",
     "runtime-main.js": "/reactive-shop/static/js/runtime-main.9f62fa0e.js",
     "runtime-main.js.map": "/reactive-shop/static/js/runtime-main.9f62fa0e.js.map",
     "static/js/2.c3deed49.chunk.js": "/reactive-shop/static/js/2.c3deed49.chunk.js",
     "static/js/2.c3deed49.chunk.js.map": "/reactive-shop/static/js/2.c3deed49.chunk.js.map",
     "index.html": "/reactive-shop/index.html",
-    "precache-manifest.d698b1f2b1229cffcdf4ad1e3f9d9802.js": "/reactive-shop/precache-manifest.d698b1f2b1229cffcdf4ad1e3f9d9802.js",
+    "precache-manifest.1b08a5687ded30d623542536b6e7fd93.js": "/reactive-shop/precache-manifest.1b08a5687ded30d623542536b6e7fd93.js",
     "service-worker.js": "/reactive-shop/service-worker.js",
-    "static/css/main.3aed5eea.chunk.css.map": "/reactive-shop/static/css/main.3aed5eea.chunk.css.map",
+    "static/css/main.79b377fb.chunk.css.map": "/reactive-shop/static/css/main.79b377fb.chunk.css.map",
     "static/js/2.c3deed49.chunk.js.LICENSE.txt": "/reactive-shop/static/js/2.c3deed49.chunk.js.LICENSE.txt",
     "static/media/Online-Shopping-icon-512px.png": "/reactive-shop/static/media/Online-Shopping-icon-512px.06767620.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9f62fa0e.js",
     "static/js/2.c3deed49.chunk.js",
-    "static/css/main.3aed5eea.chunk.css",
-    "static/js/main.b689ddb6.chunk.js"
+    "static/css/main.79b377fb.chunk.css",
+    "static/js/main.f94b34ad.chunk.js"
   ]
 }
