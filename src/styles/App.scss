@@ -30,7 +30,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 830px) {
   .App {
     text-align: center;
   }
@@ -39,7 +39,7 @@
   }
 
   .main_container {
-    margin-top: 58px;
+    margin-top: 50px;
   }
 
   .header-big {
@@ -57,7 +57,7 @@
     cursor: none;
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     p.price {
       font-size: 20px;

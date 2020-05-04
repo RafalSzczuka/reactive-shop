@@ -48,18 +48,24 @@ class Navigation extends Component {
       <div className={burgerActivated ? "Navigation active" : "Navigation"}>
         <div className="nav_items">
           <ul>{menu}</ul>
-          <Link to="/cart" className="cart_btn" onClick={this.handleBurger}>
-            <span className="ico">
-              <FontAwesomeIcon icon={faShoppingCart} />
-            </span>
-            {`Cart (${basketNumbers})`}
-          </Link>
-          <div className={burgerActivated ? "burger active" : "burger"}>
-            {burgerActivated ? (
-              <FontAwesomeIcon icon={faTimes} onClick={this.handleBurger} />
-            ) : (
-              <FontAwesomeIcon icon={faBars} onClick={this.handleBurger} />
-            )}
+          <div className="cart-burger">
+            <Link
+              to="/cart"
+              className="cart_btn"
+              onClick={() => this.setState({ burgerActivated: false })}
+            >
+              <span className="ico">
+                <FontAwesomeIcon icon={faShoppingCart} />
+              </span>
+              {`Cart (${basketNumbers})`}
+            </Link>
+            <div className={burgerActivated ? "burger active" : "burger"}>
+              {burgerActivated ? (
+                <FontAwesomeIcon icon={faTimes} onClick={this.handleBurger} />
+              ) : (
+                <FontAwesomeIcon icon={faBars} onClick={this.handleBurger} />
+              )}
+            </div>
           </div>
         </div>
       </div>

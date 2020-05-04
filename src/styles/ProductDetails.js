@@ -129,7 +129,7 @@ export const DetailsWidget = styled.div`
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 830px) {
     width: 95%;
     padding: 20px 0;
     margin-top: 35px;
@@ -143,8 +143,8 @@ export const DetailsWidget = styled.div`
       }
 
       .img_container {
-        width: 95%;
-        position: static;
+        min-width: 90%;
+        max-width: 90%;
       }
 
       img {
@@ -196,7 +196,7 @@ export const Technical = styled.div`
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 830px) {
     ul {
       list-style: disc;
       padding-left: 25%;
