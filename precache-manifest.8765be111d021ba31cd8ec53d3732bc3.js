@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99a83da2a1f26fb27c61149a89caea3d",
+    "revision": "f88bd0f652e3e1215678eedee142ec36",
     "url": "/reactive-shop/index.html"
   },
   {
-    "revision": "86547719caf1ede3fbef",
-    "url": "/reactive-shop/static/css/main.420d437a.chunk.css"
+    "revision": "bd6d98a39d67bb91ee62",
+    "url": "/reactive-shop/static/css/main.04a7f937.chunk.css"
   },
   {
-    "revision": "0caf1521f7f790031e39",
-    "url": "/reactive-shop/static/js/2.2935d8e6.chunk.js"
+    "revision": "26bff9e7eccf6f2f16c6",
+    "url": "/reactive-shop/static/js/2.c3deed49.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/reactive-shop/static/js/2.2935d8e6.chunk.js.LICENSE.txt"
+    "url": "/reactive-shop/static/js/2.c3deed49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86547719caf1ede3fbef",
-    "url": "/reactive-shop/static/js/main.2c80fd45.chunk.js"
+    "revision": "bd6d98a39d67bb91ee62",
+    "url": "/reactive-shop/static/js/main.b689ddb6.chunk.js"
   },
   {
     "revision": "39ec7b3591a5983d2641",
