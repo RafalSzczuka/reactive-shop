@@ -11,6 +11,7 @@ Products is provided by simple json file, but app architecture should handle any
 
 - Use dynamic search throu products (filter bar, radio buttons)
 - Create fully functional shopping cart, with redux state management
+- Use browser localstorage to save shopping cart data
 - Create simple contact form with data validation
 - Use react-router-dom library. Use switch, to navigate throu app (redirect to 404 page)
 - Apply page transition animations (done by use [Framer Motion library](https://www.framer.com/api/motion/))
