@@ -9,6 +9,7 @@ import ContactPage from "../pages/ContactPage";
 import CartPage from "../pages/CartPage";
 import OrderPage from "../pages/OrderPage";
 import ProductPage from "../pages/ProductPage";
+import ErrorPage from "../pages/ErrorPage";
 
 const Page = () => {
   const location = useLocation();
@@ -23,7 +24,7 @@ const Page = () => {
           <Route path="/cart" component={CartPage} />
           <Route path="/product/:id" component={ProductPage} />
           <Route path="/order" component={OrderPage} />
-          {/* <Route component={ErrorPage} /> */}
+          <Route component={ErrorPage} />
         </Switch>
       </AnimatePresence>
     </div>
