@@ -1,7 +1,7 @@
 <h2 align="center">This is demo project of the Shop App<br>created in React.</h2>
 
 <p align="center">Live demo is avaliable at:</p>
-<h1 align="center">[Reactive Store](https://www.rafalszczuka.github.io/reactive-shop/#/reactive-shop/)</h1>
+<h2 align="center">https://rafalszczuka.github.io/reactive-shop/#/reactive-shop/</h2>
 
 It was created to learn, extend skills and for practice.
 
