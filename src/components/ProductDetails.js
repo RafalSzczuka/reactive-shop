@@ -1,17 +1,10 @@
 import React from "react";
-import { DetailsWidget, Header, Technical } from "../styles/ProductDetails";
+import { DetailsWidget, Header } from "../styles/ProductDetails";
 import AddButton from "./AddButton";
 import { Link } from "react-router-dom";
 import { CatalogBtn } from "../styles/CatalogBtn";
 
-const ProductDetails = ({
-  name,
-  amount,
-  category,
-  image,
-  weight,
-  dimensions,
-}) => {
+const ProductDetails = ({ name, amount, category, image }) => {
   return (
     <DetailsWidget className="container">
       <Header>{name}</Header>
@@ -33,30 +26,6 @@ const ProductDetails = ({
         </p>
       </div>
       <div className="wrapper">
-        <div className="column_left">
-          <Technical>
-            <h3>Technical data:</h3>
-            <ul>
-              <li>
-                Weight: <span>{weight}</span>
-              </li>
-              <li>
-                Dimensions:
-                <ul className="dimensions">
-                  <li>
-                    Height: <span>{dimensions.Height}</span>
-                  </li>
-                  <li>
-                    Width: <span>{dimensions.Width}</span>
-                  </li>
-                  <li>
-                    Depth: <span>{dimensions.Depth}</span>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </Technical>
-        </div>
         <div className="column_right">
           <div className="buttons">
             <div className="add_to_cart">
