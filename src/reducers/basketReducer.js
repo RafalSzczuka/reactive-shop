@@ -5,21 +5,42 @@ import {
   DECREASE_QUANTITY,
   CLEAR_PRODUCT,
   CLEAR_BASKET,
+  PRODUCTS_GET_SUCCESS,
+  PRODUCTS_GET_FAILURE,
 } from "../actions/types";
-
-import ItemsService from "../services/ItemsService";
-
-const products = ItemsService.getCartObjects();
 
 const initialState = {
   basketNumbers: 0,
   cartCost: 0,
-  products: products,
+  products: [],
+  origin: [],
 };
+let initialProducts;
 
 export default (state = initialState, action) => {
   let productSelected = "";
+
   switch (action.type) {
+    case PRODUCTS_GET_SUCCESS:
+      initialProducts = { ...action.payload };
+      const origin = [];
+
+      for (const key in initialProducts) {
+        origin.push(initialProducts[key]);
+      }
+
+      return {
+        ...state,
+        products: action.payload,
+        origin: origin,
+      };
+
+    //asdasd
+    case PRODUCTS_GET_FAILURE:
+      return {
+        ...state,
+      };
+
     case ADD_PRODUCT_BASKET:
       productSelected = { ...state.products[action.payload] };
 
@@ -97,7 +118,9 @@ export default (state = initialState, action) => {
     case CLEAR_BASKET:
       return {
         ...state,
-        ...initialState,
+        basketNumbers: 0,
+        cartCost: 0,
+        products: { ...initialProducts },
       };
     default:
       return state;

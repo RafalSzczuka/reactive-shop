@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { HashRouter } from "react-router-dom";
 
-import { Provider } from "react-redux";
-import store from "../store";
+import { connect } from "react-redux";
+import { fetchProductsAction } from "../actions/fetchProductsAction";
 
 import Navigation from "./Navigation";
 import Page from "./Page";
@@ -10,20 +10,27 @@ import Footer from "./Footer";
 
 import "../styles/App.scss";
 
-class App extends Component {
-  render() {
-    return (
-      <HashRouter basename={process.env.PUBLIC_URL}>
-        <Provider store={store}>
-          <div className="App">
-            <Navigation />
-            <Page />
-            <Footer />
-          </div>
-        </Provider>
-      </HashRouter>
-    );
-  }
+function App({ products, fetchProductsAction }) {
+  useEffect(() => {
+    fetchProductsAction();
+  }, [fetchProductsAction]);
+
+  return (
+    <HashRouter basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <Navigation />
+        <Page />
+        <Footer />
+      </div>
+    </HashRouter>
+  );
 }
 
-export default App;
+export default connect(
+  (state) => {
+    return {
+      products: state.basketState.products,
+    };
+  },
+  { fetchProductsAction }
+)(App);

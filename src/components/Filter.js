@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "../styles/Filter.scss";
 import "../styles/Radio.scss";
-import ProductService from "../services/ItemsService";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
-
-const manufacturers = ["All", ...ProductService.getManufactures()].sort();
 
 const Filter = (props) => {
   const [filterOpened, setFilterOpened] = useState(false);
   const filterClassNames = filterOpened ? "Filter opened" : "Filter";
   const arrowClassNames = filterOpened ? "arrow active" : "arrow";
+  const companyNames = [...new Set(props.products.map((p) => p.manufacture))];
+
+  const manufacturers = ["All", ...companyNames].sort();
 
   return (
     <div className={filterClassNames}>
